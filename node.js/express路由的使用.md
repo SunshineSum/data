@@ -1,10 +1,3 @@
-###1.引入express框架
-	let express = require('express')
-###2.实例一个app应用对象
-	let app = express()
-###3.定义端口号
-	const PORT = 3000
-
 ###一、请求对象（request）
      request.query  获取GET请求的查询字符串参数（urlencoded编码方式），获取到的是一个对象     request.params 获取GET请求的参数路由中的参数，拿到的是一个对象
      request.body   获取POST请求的请求体中的参数（必须要借助一个中间件才可以）
@@ -18,6 +11,17 @@
      response.set('key','value') 自定义响应头
      response.get('key') 获取响应头中的指定内容
 ###备注：在解析路由的时候，做出的是完整、精准匹配
+
+
+##举例
+###1.引入express框架
+	let express = require('express')
+###2.实例一个app应用对象
+	let app = express()
+###3.定义端口号
+	const PORT = 3000
+
+
 ####根路由
 	app.get('/',(request,response)=>{
 	  //console.log(request.query);

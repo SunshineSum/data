@@ -24,9 +24,8 @@
 	* -早期用于解决http无状态的问题
 	* -七天免登录等等
 ###5.在不同的语言、不同的框架中，操作cookie的语法是不一样的，工作的原理和过程是一样的。
-###备注：
-	在express框架中，不需要任何的第三方插件（库）就可以实现设置cookie
-___
+###备注：在express框架中，不需要任何的第三方插件（库）就可以实现设置cookie
+
 	let express =  require('express')
 	
 	let cookieParser = require('cookie-parser')

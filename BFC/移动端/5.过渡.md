@@ -1,0 +1,23 @@
+###transition(过渡)
+	transition:arg1 arg2 arg3 arg4,...;(过渡发生在样式改变的时候)
+	
+	arg1 :transition-duration 运动时间  （规范明确规定了过渡值必须为正数）
+	arg2 :transition-delay 延迟时间
+	arg3 :transition-property  要运动的样式  （all || [attr] || none）
+	arg4 :transition-timing-function 运动形式  
+			ease :（逐渐变慢）默认值
+			linear :（匀速）
+			ease-in : (加速)
+			ease-out :（减速）
+			ease-in-out :（先加速后减速）
+			cubic-bezier : 贝塞尔曲线（ x1, y1, x2, y2 ） 
+							http://cubic-bezier.com/
+	
+	对arg2 arg3 arg4的顺序没有要求 
+	
+###过渡结束事件
+	Webkit内核： obj.addEventListener('webkitTransitionEnd',function(){},false);
+	其他标准浏览器:obj.addEventListener('transitionend',function(){},false);
+
+					
+

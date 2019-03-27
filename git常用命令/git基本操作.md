@@ -11,6 +11,7 @@
 ###3、将本地仓库推送到远程仓库
 		git remote add origin https://github.com/zxfjd3g/xxx.git 关联远程仓库
 		git push origin master
+		origin是远程仓库在本地的标识
 ###4、如果本地有更新, 推送到远程
 		git add *
 		git commit -m "xxx"
